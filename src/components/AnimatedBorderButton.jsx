@@ -14,7 +14,15 @@ export const AnimatedBorderButton = ({children}) => {
                             preserveAspectRatio="none"
                             style={{overflow: 'visible'}}
                             >
-                            <path d="M 30,1 A 29,29 0 0 0 1,30 L 1,29 A 29,29 0 0 0 30,59 L 180,59 A 29,29 0 0 0 209,30 L 209,30 A 29,29 0 0 0 180,1 Z" 
+                            <path d=" M 30,1
+                             A 29,29 0 0 0 1,30
+                            L 1,29
+                            A 29,29 0 0 0 30,59
+                            L 170,59
+                            A 29,29 0 0 0 199,30
+                            L 199,30
+                            A 29,29 0 0 0 170,1
+                            Z" 
                             fill="none" 
                             stroke= 'var(--color-primary)'
                             strokeWidth="2" 

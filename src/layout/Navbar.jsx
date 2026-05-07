@@ -9,6 +9,9 @@ const navLinks = [
     {href: '#testimonials', label: 'Testimonials'},
 ];
 
+const contacts = [
+    {href: '#contact', label: 'Contact Me'}
+]
 export const Navbar = () =>{
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,7 +33,7 @@ export const Navbar = () =>{
         <nav className="container mx-auto px-6 flex items-center justify-between">
             <a href="#" 
             className="text-xl font-bold tracking-tight hover:text-primary">
-            PM<spam className="text-primary">.</spam>   
+            TS<spam className="text-primary">.</spam>   
             </a>
 
             {/* Desktop Nav */}
@@ -48,10 +51,18 @@ export const Navbar = () =>{
             </div>
 
             {/* CTA BUTTON */}
-            <div className='hidden md:block'>
-                <Button size ="sm">Contact Me</Button>
+            <div className='hidden md:block'>   
+            {contacts.map((contact, index) => (
+            <a 
+            href={contact.href} key={index}>
+            <Button size="sm"
+            >
+                {contact.label}
+            </Button>
+            </a>
+             ))}
             </div>
-
+         
             {/* Mobile menu button*/}
             <button className='md:hidden p-2 text-foreground cursor-pointer' 
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -72,8 +83,18 @@ export const Navbar = () =>{
                         {link.label}
                     </a>
                  ))}
-                 <Button onClick={() => setIsMobileMenuOpen(false)}>
-                    Contact Me</Button>
+    
+                 {contacts.map((contact, index) => (
+                <a
+                href={contact.href}
+                key={index}
+                onClick={() => setIsMobileMenuOpen(false)}
+                >
+                    <Button className="w-full">
+                        {contact.label}
+                    </Button>
+                </a>
+                ))}
             </div>
         </div>)}
     </header>
