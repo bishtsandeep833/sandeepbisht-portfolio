@@ -86,10 +86,13 @@ export const Hero = () =>{
                         <Button size="lg">
                             Contact Me<ArrowRight className='w-5 h-5'/>
                         </Button>
+                        
+                        <a href='/src/assets/Sandeep resume.pdf'download="Sandeep.CV.pdf">
                         <AnimatedBorderButton> 
                             <Download className='w-5 h-5'/>
                                Download CV
                         </AnimatedBorderButton>
+                        </a>
                     </div>
                     {/* Social Links */}
                     <div className='flex flex-wrap items-center gap-4 animate-fade-in animation-delay-400'>
