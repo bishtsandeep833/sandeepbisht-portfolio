@@ -87,12 +87,12 @@ export const Hero = () =>{
                             Contact Me<ArrowRight className='w-5 h-5'/>
                         </Button>
                         
-                        <a href='/public/Sandeep resume.pdf'download="Sandeep.CV.pdf">
-                        <AnimatedBorderButton> 
-                            <Download className='w-5 h-5'/>
-                               Download CV
+                    <a href="/sandeep-resume.pdf" download>
+                        <AnimatedBorderButton>
+                             <Download className="w-5 h-5" />
+                                Download CV
                         </AnimatedBorderButton>
-                        </a>
+                    </a>
                     </div>
                     {/* Social Links */}
                     <div className='flex flex-wrap items-center gap-4 animate-fade-in animation-delay-400'>
